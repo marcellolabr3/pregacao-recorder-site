@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Política de Privacidade — Pregação Recorder</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0; padding: 2.5rem 1.25rem;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.65; color: #1a1a1a; background: #ffffff;
+  }
+  main { max-width: 42rem; margin: 0 auto; }
+  h1 { font-size: 1.7rem; margin: 0 0 .25rem; }
+  .sub { color: #5f6368; margin-top: 0; }
+  h2 { font-size: 1.1rem; margin-top: 2rem; }
+  ul { padding-left: 1.25rem; }
+  li { margin: .35rem 0; }
+  a { color: #1a5fb4; }
+  code { background: rgba(0,0,0,.06); padding: .1rem .3rem; border-radius: 4px; }
+  footer { margin-top: 2.5rem; font-size: .9rem; color: #5f6368; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8eaed; background: #202124; }
+    .sub, footer { color: #9aa0a6; }
+    a { color: #8ab4f8; }
+    code { background: rgba(255,255,255,.1); }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Política de Privacidade</h1>
+  <p class="sub">Pregação Recorder · última atualização: 2 de outubro de 2026</p>
+
+  <p>
+    Esta política descreve como o aplicativo <strong>Pregação Recorder</strong>
+    trata dados pessoais, inclusive quando usa o Google Drive.
+  </p>
+
+  <h2>1. Responsável</h2>
+  <p>
+    Dúvidas, pedidos de exclusão ou revogação de acesso podem ser enviados por
+    e-mail para
+    <a href="mailto:marvinlabre@gmail.com">marvinlabre@gmail.com</a>.
+  </p>
+
+  <h2>2. Dados acessados do Google</h2>
+  <p>Ao conectar a conta, o aplicativo pede somente estas permissões:</p>
+  <ul>
+    <li>
+      <code>https://www.googleapis.com/auth/drive.file</code> — permite
+      <strong>somente</strong> criar e consultar arquivos que o próprio
+      aplicativo criou. Ele não lê, não edita e não exclui arquivos que já
+      existiam na sua conta, nem pastas de terceiros.
+    </li>
+    <li>
+      <code>openid</code> e
+      <code>https://www.googleapis.com/auth/userinfo.email</code> — usados
+      apenas para identificar o endereço de e-mail da conta conectada.
+    </li>
+  </ul>
+  <p>
+    Não são solicitados contatos, calendário, Fotos do Google, Gmail,
+    localização nem nenhum outro escopo.
+  </p>
+
+  <h2>3. Finalidade</h2>
+  <p>
+    Os dados acima são usados exclusivamente para enviar as gravações de
+    pregações para a pasta definida pelo administrador do equipamento e para
+    confirmar que o envio foi concluído.
+  </p>
+
+  <h2>4. Áudio</h2>
+  <p>
+    O áudio é gravado <strong>localmente</strong> no equipamento da igreja. Ele
+    não é transmitido em tempo real nem enviado a nenhum serviço de terceiros.
+    O Google Drive é apenas o destino final da cópia gravada.
+  </p>
+
+  <h2>5. Onde os dados ficam</h2>
+  <ul>
+    <li>
+      O <strong>token de acesso</strong> ao Google é guardado apenas no
+      equipamento, no arquivo <code>config/google_token.json</code>, com
+      permissão de leitura restrita ao próprio aplicativo.
+    </li>
+    <li>
+      As <strong>gravações</strong> ficam no armazenamento local do
+      equipamento e, após o envio, na sua pasta do Google Drive.
+    </li>
+    <li>
+      Nenhuma informação é enviada a servidores do desenvolvedor, pois o
+      aplicativo não possui servidor próprio na nuvem.
+    </li>
+  </ul>
+
+  <h2>6. Compartilhamento</h2>
+  <p>
+    Não vendemos, não alugamos e não compartilhamos dados com terceiros. Não
+    usamos dados para publicidade. A única integração externa é o Google
+    Drive, realizada pela API oficial do Google.
+  </p>
+
+  <h2>7. Retenção</h2>
+  <p>
+    O token é mantido até que a conta seja desconectada ou que o acesso seja
+    revogado. As gravações seguem a política de retenção configurada no
+    equipamento e podem ser apagadas localmente a qualquer momento.
+  </p>
+
+  <h2>8. Como revogar o acesso</h2>
+  <ul>
+    <li>
+      Na interface do aplicativo: <strong>CONFIG → GOOGLE DRIVE →
+      DESCONECTAR</strong> (apaga o token do equipamento na hora);
+    </li>
+    <li>
+      Na sua conta Google:
+      <a href="https://myaccount.google.com/permissions" rel="noopener">
+        myaccount.google.com/permissions</a> → encontre “Pregação Recorder” →
+        <strong>Remover acesso</strong>.
+    </li>
+  </ul>
+
+  <h2>9. Crianças</h2>
+  <p>
+    O aplicativo é destinado a uso institucional em igreja e não é voltado a
+    crianças nem coleta dados delas de forma deliberada.
+  </p>
+
+  <h2>10. Alterações nesta política</h2>
+  <p>
+    Mudanças relevantes serão publicadas nesta mesma página, com a data de
+    atualização no topo.
+  </p>
+
+  <footer>
+    <p><a href="index.html">← Voltar para a página do aplicativo</a></p>
+    <p>Contato: <a href="mailto:marvinlabre@gmail.com">marvinlabre@gmail.com</a></p>
+  </footer>
+</main>
+</body>
+</html>

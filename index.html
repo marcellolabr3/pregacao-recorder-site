@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pregação Recorder</title>
+<meta name="description" content="Aplicativo que grava pregações e envia as gravações para o Google Drive da igreja.">
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0; padding: 2.5rem 1.25rem;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.6; color: #1a1a1a; background: #ffffff;
+  }
+  main { max-width: 42rem; margin: 0 auto; }
+  h1 { font-size: 1.9rem; margin: 0 0 .25rem; }
+  .sub { color: #5f6368; margin-top: 0; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  ul { padding-left: 1.25rem; }
+  li { margin: .35rem 0; }
+  a { color: #1a5fb4; }
+  .card {
+    border: 1px solid #dadce0; border-radius: 10px;
+    padding: 1.1rem 1.25rem; margin: 1.75rem 0;
+  }
+  footer { margin-top: 2.5rem; font-size: .9rem; color: #5f6368; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8eaed; background: #202124; }
+    .sub, footer { color: #9aa0a6; }
+    a { color: #8ab4f8; }
+    .card { border-color: #3c4043; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Pregação Recorder</h1>
+  <p class="sub">Gravação de pregações com envio automático para o Google Drive</p>
+
+  <p>
+    Aplicativo que roda em um computador de bolso instalado na igreja. Ele grava
+    o áudio que sai da mesa de som, guarda uma cópia local e envia a gravação
+    para uma pasta do Google Drive da própria igreja.
+  </p>
+
+  <div class="card">
+    <strong>Acesso ao Google</strong>
+    <ul>
+      <li>
+        <strong>Arquivos do Drive criados por este aplicativo</strong>
+        (<code>drive.file</code>): o app <em>não</em> lê, não altera e não apaga
+        nenhum arquivo seu que não tenha sido criado por ele. O acesso serve
+        apenas para enviar as gravações e conferir se o envio deu certo.
+      </li>
+      <li>
+        <strong>Endereço de e-mail da conta</strong>
+        (<code>email</code>): usado só para identificar qual conta foi
+        conectada ao equipamento.
+      </li>
+    </ul>
+    <p style="margin:.75rem 0 0">
+      O áudio nunca passa pelo Google para ser gravado: a gravação é local, e o
+      Drive é apenas o destino. Se a internet cair, a gravação continua e o
+      envio acontece quando a conexão voltar.
+    </p>
+  </div>
+
+  <h2>Privacidade</h2>
+  <p>
+    Consulte a
+    <a href="privacidade.html"><strong>Política de Privacidade</strong></a>
+    para entender quais dados são tratados, por que e como revogar o acesso.
+  </p>
+
+  <footer>
+    <p>
+      Suporte:
+      <a href="mailto:marvinlabre@gmail.com">marvinlabre@gmail.com</a>
+    </p>
+    <p>Este site é a página institucional do aplicativo Pregação Recorder.</p>
+  </footer>
+</main>
+</body>
+</html>
